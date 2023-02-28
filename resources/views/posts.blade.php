@@ -1,12 +1,5 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <title>My Blog</title>
-    <link rel="stylesheet" href="css/app.css">
-</head>
-<body>
-    @foreach ($posts as $post)
+<x-layout>
+    @foreach($posts as $post)
         <article>
             <h1>
                 <a href="/posts/{{ $post->slug }}">
@@ -19,5 +12,4 @@
             </div>
         </article>
     @endforeach
-</body>
-</html>
+</x-layout>

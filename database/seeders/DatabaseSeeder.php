@@ -19,6 +19,6 @@ class DatabaseSeeder extends Seeder
         Category::truncate();
         Post::truncate();
 
-        Post::factory(15)->create();
+        Post::factory(30)->create();
     }
 }

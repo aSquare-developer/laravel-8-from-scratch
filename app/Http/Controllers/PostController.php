@@ -2,9 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Category;
 use App\Models\Post;
-use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 
 class PostController extends Controller
 {
@@ -21,5 +20,10 @@ class PostController extends Controller
         ]);
     }
 
+    public function create() {
+
+
+        return view('posts.create');
+    }
 
 }
